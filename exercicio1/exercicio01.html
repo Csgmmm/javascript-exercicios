@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <script>
+      const paises = [
+        "Albânia",
+        "Bolívia",
+        "Canadá",
+        "Dinamarca",
+        "Etiópia",
+        "Finlândia",
+        "Alemanha",
+        "Hungria",
+        "Irlanda",
+        "Japão",
+        "Quênia",
+      ];
+
+      for (let p = 0; p < paises.length; p++) {
+        console.log(paises[p]);
+      }
+
+      function itensArray() {
+        return paises.length;
+      }
+      console.log(itensArray());
+
+      paises.unshift("Portugal");
+      console.log(paises);
+
+      paises.push("Espanha");
+      console.log(paises);
+
+      const ultimos3Paises = paises.slice(-3);
+      console.log(ultimos3Paises);
+
+      console.log(paises.join(" - "));
+    </script>
+  </body>
+</html>
